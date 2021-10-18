@@ -56,9 +56,15 @@
     .btn-secondary:hover{
         background-color: rgb(241, 99, 56);
     }
-    .bg-primary{    
+    [class*=bg-primary]{    
         color:#fff;
         background-color:var(--primary);
+    }
+    [class*=-with-wave]{
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-image: url('../images/wave.svg');
     }
     .bg-white{
         background-color: #fff;
