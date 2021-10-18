@@ -1,0 +1,102 @@
+/* Set Default Setting */
+    *{
+        margin:0;
+        padding:0;
+        font-family: 'Open Sans';
+        box-sizing: border-box;
+        --primary:#328051;
+        --secondary:rgb(241, 124, 56);
+    }
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('../fonts/Montserrat.ttf');
+    }
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('../fonts/Montserrat-Bold.ttf');
+    }
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('../fonts/OpenSans-Regular.ttf');
+    }
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('../fonts/OpenSans-Bold.ttf');
+    }
+    body{
+        background-color: #f2f2f2;
+    }
+    h1{
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+    .btn{
+        display: flex;
+        align-items: center;
+        padding:15px 40px;
+        font-size: 16px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        margin: 20px 0px;
+        border:none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .btn-secondary{
+        background-color: var(--secondary);
+        color:#fff;
+    }
+    .btn-primary{
+        background-color: var(--primary);
+        color:#fff;
+    }
+    .btn-primary:hover{
+        background-color: rgb(22, 78, 38);
+    }
+    .btn-secondary:hover{
+        background-color: rgb(241, 99, 56);
+    }
+    .bg-primary{    
+        color:#fff;
+        background-color:var(--primary);
+    }
+    .bg-white{
+        background-color: #fff;
+        color:#000;
+    }
+    .bg-image{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)),url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-white{
+        color:#fff;
+    }
+    .title-section{
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .title-section::before{
+        content: '';
+        height: 100%;
+        width: 4px;
+        border-radius: 2px;
+        background-color: var(--primary);
+        left: -30px;
+        position: absolute;
+    }
+    .bg-primary .title-section::before{
+        background-color: #fff;
+    }
+    .justify-content-between{
+        justify-content: space-between;
+    }

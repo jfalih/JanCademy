@@ -1,0 +1,96 @@
+/* Video Section */
+.video-banner{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.video-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+/* Box In Video Section */
+    .video-box{
+        align-items: center;
+        padding: 20px 50px;
+        width: 800px;
+        position: absolute;
+        border-radius: 5px;
+        background-color: #fff;
+        bottom: -80px;
+    }
+    .form-search{
+        display: flex;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 40px;
+        width: 100%;
+        border-radius: 5px 0px 0px 5px;
+        border-bottom: 1px solid #f3f3f3;
+    }
+    .search-field{
+        background-color: transparent;
+        border:none;
+        outline: none;
+        font-weight: bold;
+        width: 100%;
+        font-size: 16px;
+        height: 100%;
+    }
+    .search-button{
+        height: 40px;
+        right: 0;
+        font-size: 28px;
+        background-color: transparent;
+        border:none;
+        position: absolute;
+        cursor: pointer;
+        width: 40px;
+    }
+    .partner-title{
+        display: block;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .partner-list{
+        display: flex;
+        overflow-x: auto;
+        padding-bottom: 20px;
+    }
+    .partner-item{
+        width: auto;
+        margin: 0px 20px;
+        height: 40px;
+    }
+    .partner-list::-webkit-scrollbar {
+        height: 3px;
+    }
+    .partner-list::-webkit-scrollbar-track {
+        background-color: #f3f3f3;
+    }
+    .partner-list::-webkit-scrollbar-thumb {
+        background-color: var(--primary);
+    }
+    @media (max-width:1000px) {
+        .video-box{
+            width: 600px;
+        }
+    }
+    @media (max-width:700px){
+        .video-box{
+            width: 400px;
+        }
+        .partner-item{
+            height: 20px;
+        }
+    }
+/* End Box */
+/* End Video Section */

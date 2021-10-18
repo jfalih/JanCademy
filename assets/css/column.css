@@ -1,0 +1,36 @@
+.container{
+    padding:150px 100px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.col-md-12{
+    width: calc(100%/12*12);
+}
+.col-md-8{
+    width: calc(100%/12*8);
+}
+.col-md-4{
+    width: calc(100%/12*4);
+}
+.col-md-6{
+    width: calc(100%/12*6);
+}
+
+@media(max-width:900px){
+    .container{
+        padding:150px 50px;
+    }
+}
+@media(max-width:700px){
+    .col-sm-12{
+        width: calc(100%*12/12);
+    }
+}

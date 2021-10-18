@@ -1,0 +1,58 @@
+#panduan{
+    position: relative;
+}
+#panduan::before{
+    content: 'Skill Kamu? Untuk Kamu..';
+    position: absolute;
+    font-weight: bold;
+    bottom:50%;
+    transform: rotate(-90deg);
+    left:-70px;
+    font-weight: bold;
+    color:var(--primary);
+}
+#panduan .box{
+    display: flex;
+    padding:30px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    color:#fff;
+    right: 0;
+    width: 300px;
+    text-decoration: none;
+    background-color: var(--secondary);
+}
+#panduan .box i{
+    font-size: 48px;
+}
+#panduan .box:hover{
+    background-color: rgb(22, 78, 38);
+}
+.panduan{
+    width: 100%;
+}
+.panduan-item{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.panduan-number{
+    flex: none;
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    margin-right: 20px;
+    border-radius: 5px;
+    display: flex;
+    font-weight: bold;
+    color:#fff;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+}
+.panduan-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
