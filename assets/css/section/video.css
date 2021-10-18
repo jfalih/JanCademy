@@ -22,7 +22,7 @@
         position: absolute;
         border-radius: 5px;
         background-color: #fff;
-        bottom: -80px;
+        bottom: -100px;
     }
     .form-search{
         display: flex;

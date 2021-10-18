@@ -141,6 +141,11 @@
             display: block;
         }
     }
+    @media (max-width:700px) {
+        header{
+            padding:20px 30px;
+        }
+    }
 /* End Header */
 /* Category */
     .list-category{
