@@ -85,6 +85,10 @@
         border-radius: 2px;
         height: 50px;
     }
+    header.scrollActive .toggle-button{
+        background-color: var(--primary);
+        color:#fff;
+    }
     header.scrollActive .menu-link{
         color:var(--primary);
         transition: ease 0.8s;
@@ -195,6 +199,8 @@ footer .social-media{
 footer .social-item{
     font-size: 24px;
     margin:10px;
+    color:#ccc;
+    text-decoration: none;
 }
 footer ul{
     height: 200px;

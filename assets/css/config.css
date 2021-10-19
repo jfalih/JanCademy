@@ -8,6 +8,9 @@
         --dark-primary:rgb(22, 78, 38);
         --secondary:rgb(241, 124, 56);
     }
+    html{    
+      scroll-behavior: smooth;
+    }
     @font-face {
         font-family: 'Montserrat';
         src: url('../fonts/Montserrat.ttf');
@@ -34,7 +37,7 @@
         font-weight: bold;
     }
     .btn{
-        display: block;
+        display: flex;
         align-items: center;
         padding:15px 40px;
         font-size: 16px;
@@ -108,7 +111,7 @@
         left: -30px;
         position: absolute;
     }
-    .bg-primary .title-section::before{
+    [class*="bg-primary"] .title-section::before{
         background-color: #fff;
     }
     .justify-content-between{

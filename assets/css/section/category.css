@@ -21,7 +21,7 @@
     border-radius: 50px;
     top: 50%;
     left:0;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
 }
 .arrow-right-list-category{
     position: absolute;
@@ -34,10 +34,13 @@
     border-radius: 50px;
     top: 50%;
     right: 0;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
 }
 .arrow-left-list-category:hover{
-    background-color: #f2f2f2;
+    background-color: #fff;
+}
+.arrow-right-list-category:hover{
+    background-color: #fff;
 }
 .category-item{
     display: flex;
