@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./assets/css/style.css" rel="stylesheet">   
-    <link href="./assets/css/config.css" rel="stylesheet">
     <link href="./assets/css/section/video.css" rel="stylesheet">
     <link href="./assets/css/section/panduan.css" rel="stylesheet">
     <link href="./assets/css/section/category.css" rel="stylesheet">
+    <link href="./assets/css/section/slider.css" rel="stylesheet">
     <link href="./assets/css/column.css" rel="stylesheet">
+    <link href="./assets/css/config.css" rel="stylesheet">
     <link href="./assets/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
@@ -54,7 +55,35 @@
             <div class="col-md-6 col-sm-12">
                 <div class="container">
                     <h1 class="title-section">Kata Mereka</h1>
-                </div>
+                    <div class="slider center">
+                        <div class="slider-item fade">
+                             <img class="slider-img img-rounded" src="assets/images/avatar-1.jpg"/>
+                             <h1 class="slider-title">Jan Falih Fadhillah, Tangerang.</h1>
+                             <p>"Pada awalnya aku kesulitan untuk membagi waktu belajar semenjak ada JanCademy aku tinggal menonton video dari mentor terbaik saja untuk belajar"</p>
+                        </div>
+                        <div class="slider-item fade">
+                             <img class="slider-img img-rounded" src="assets/images/avatar-1.jpg"/>
+                             <h1 class="slider-title">John Doe, Jawa Timur</h1>
+                             <p>"Sekarang kalo kesulitan ada pr aku tinggal tanya diforum diskusi JanCademy".</p>
+                        </div>
+                        <div class="slider-item fade">
+                             <img class="slider-img img-rounded" width="400" src="assets/images/avatar-2.jpg"/>
+                             <h1 class="slider-title">Doe John, Jawa Barat</h1>
+                             <p>Kami sediakan video yang dapat diputar berulang kali, agar kamu bisa belajar kapanpun dimanapun.</p>
+                        </div>                       
+                         <a id="prev-slider" class="prev-slider">
+                             <i class="bx bx-chevron-left bx-md"></i>
+                         </a>
+                         <a id="next-slider" class="next-slider">
+                             <i class="bx bx-chevron-right bx-md"></i>
+                         </a>
+                    </div>
+                    <div class="slider-dot">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                 </div>
             </div>
             <div class="col-md-6 col-sm-12 bg-white">
                 <div id="panduan" class="container">
@@ -179,6 +208,7 @@
         </div>
     </footer>
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/slider.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
 </html>

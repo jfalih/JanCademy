@@ -1,0 +1,85 @@
+.prev-slider{
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border:none;
+    z-index: 1;
+    color:var(--primary);
+    border-radius: 50px;
+    top: 50%;
+    left: 0;
+    background-color: #fff;
+}
+.next-slider{
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:none;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--primary);
+    border-radius: 50px;
+    top: 50%;
+    right: 0;
+    background-color: #fff;
+}
+.slider{
+    position: relative;
+    width: 100%;
+}
+.slider-item{
+    display: none;
+}
+.slider-img{
+    width: 300px;
+    height: auto;
+    margin-bottom: 50px;
+    object-fit: cover;
+}
+.slider-title{
+    margin-bottom: 10px;
+}
+.slider-dot{
+    margin-top: 50px;
+    display: flex;
+}
+.slider-dot span{
+    width: 10px;
+    border-radius: 10px;
+    margin: 0px 5px;
+    height: 10px;
+    background-color: #ccc;
+}
+.slider-dot span.active{
+    width: 10px;
+    border-radius: 10px;
+    margin: 0px 5px;
+    height: 10px;
+    background-color: #fff;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
