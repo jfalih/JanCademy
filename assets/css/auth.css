@@ -1,0 +1,114 @@
+
+/* Auth */
+.title-auth{
+    display: block;
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+.title-auth a{
+    text-decoration: none;
+    color: var(--primary);
+}
+.title-auth a:hover{
+    text-decoration: none;
+    color: var(--dark-primary);
+}
+.forgot-text{
+    color:#000;
+    text-decoration: none;
+    font-size: 14px;
+}
+.social-auth{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+}
+.social-item-google{
+    padding:20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 14px;
+    color:#ccc;
+    border:1px solid #f2f2f2;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border:1px solid #f2f2f2;
+}
+.social-item-google:hover{
+    background-color: #ea4335;
+    color:#fff;
+}
+.social-item-guest{
+    padding:20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 14px;
+    color:#fff;
+    background-color: var(--primary);
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.social-item-guest:hover{
+    background-color: vaR(--dark-primary);
+}
+.divider-auth{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    height: 40px;
+    margin-top: 50px;
+    font-weight: bold;
+    color:#ccc;
+}
+.divider-auth::before{
+    content: '';
+    width: 150px;
+    height: 1px;
+    background-color: #f2f2f2;
+}
+.divider-auth::after{
+    content: '';
+    width: 150px;
+    height: 1px;
+    background-color: #f2f2f2;
+}
+.register-text a{
+    color:var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+.form-auth{
+    display: block;
+    margin-top: 50px;
+}
+.form-field{
+    border:0.1rem solid #f2f2f2;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 14px;
+    color:rgb(170, 170, 170);
+    font-weight: bold;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.form-field:focus{
+    outline: 0.1rem solid var(--primary);
+}
+.form-field::placeholder{
+    color:#ccc;
+}

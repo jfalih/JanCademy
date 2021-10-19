@@ -7,5 +7,19 @@ $(document).ready(function(){
         } else {
             header.removeClass('scrollActive');
         }
-    })
+    });
+    console.log($('#listcategory')[0].scrollWidth)
+    $('#right-button-category').click(function(e) {
+        e.preventDefault();
+        $('#listcategory').animate({
+          scrollLeft: "+=200px"
+        });
+      });
+      
+       $('#left-button-category').click(function(e) {
+        e.preventDefault();
+        $('#listcategory').animate({
+          scrollLeft: "-=200px"
+        });
+      });
 })

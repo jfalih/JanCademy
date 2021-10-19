@@ -5,6 +5,7 @@
         font-family: 'Open Sans';
         box-sizing: border-box;
         --primary:#328051;
+        --dark-primary:rgb(22, 78, 38);
         --secondary:rgb(241, 124, 56);
     }
     @font-face {
@@ -13,6 +14,7 @@
     }
     @font-face {
         font-family: 'Montserrat';
+        font-weight: bold;
         src: url('../fonts/Montserrat-Bold.ttf');
     }
     @font-face {
@@ -20,7 +22,8 @@
         src: url('../fonts/OpenSans-Regular.ttf');
     }
     @font-face {
-        font-family: 'Montserrat';
+        font-family: 'Open Sans';
+        font-weight: bold;
         src: url('../fonts/OpenSans-Bold.ttf');
     }
     body{
@@ -31,7 +34,7 @@
         font-weight: bold;
     }
     .btn{
-        display: flex;
+        display: block;
         align-items: center;
         padding:15px 40px;
         font-size: 16px;
@@ -66,7 +69,7 @@
         background-repeat: no-repeat;
         background-image: url('../images/wave.svg');
     }
-    .bg-white{
+    [class*=bg-white]{
         background-color: #fff;
         color:#000;
     }
@@ -76,6 +79,13 @@
         background-size: cover;
         background-attachment: fixed;
         background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)),url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
+    }
+    .bg-image-2{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)),url('../images/image-2.jpg');
     }
     .center{
         display: flex;
@@ -105,4 +115,7 @@
     }
     .justify-content-between{
         justify-content: space-between;
+    }
+    .mr-1{
+        margin-right: 10px;
     }
