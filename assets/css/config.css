@@ -38,8 +38,10 @@
     }
     .btn{
         display: flex;
+        max-width: 240px;
         align-items: center;
-        padding:15px 40px;
+        text-decoration: none;
+        padding:10px 40px;
         font-size: 16px;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
         margin: 20px 0px;

@@ -1,0 +1,42 @@
+
+.transition{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    background-color: var(--primary);
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(0);
+}
+.transition.active{
+    transform: translateX(-100%);
+    animation: leftAnimated .8s ease;
+}
+.logo-transition{
+    font-size: 40px;
+    color:#fff;
+    font-weight: bold;
+}
+.loading-transition{
+    color:#fff;
+}
+@-webkit-keyframes leftAnimated {
+    from {
+        transform:translateX(0)
+    } 
+    to {
+        transform: translateX(-100%)
+    }
+}
+
+@keyframes leftAnimated {
+    from {
+        transform: translate(0)
+    } 
+    to {
+        transform: translateX(-100%)
+    }
+}

@@ -12,9 +12,14 @@
     <link href="./assets/css/section/slider.css" rel="stylesheet">
     <link href="./assets/css/column.css" rel="stylesheet">
     <link href="./assets/css/config.css" rel="stylesheet">
+    <link href="./assets/css/transition.css" rel="stylesheet">
     <link href="./assets/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
+    <div class="transition">
+        <span class="logo-transition">JanCademy</span>
+        <span class="loading-transition">Loading..</span>
+    </div>
     <header id="header">
         <div class="header-left">
             <a class="logo">JanCademy</a>
@@ -37,10 +42,10 @@
                     <source src="https://cdn.videvo.net/videvo_files/video/free/2019-09/large_watermarked/190802_07_HD_15_preview.mp4"></source>
                 </video>
                 <div class="video-description">
-                    <div class="container">
+                    <div class="container center">
                         <h1 class="text-white">Belajar skill baru,<br>dengan para mentor terbaik.</h1>
                         <p class="text-white">Tumbuhkan potensi didalam diri kamu dengan meingkatkan skill kamu bersama kami.</p>
-                        <button class="btn btn-primary">Daftar Sekarang <i class="bx bx-right-arrow-alt bx-md"></i></button>                    
+                        <a href="./register.html" class="btn btn-primary">Daftar Sekarang <i class="bx bx-right-arrow-alt bx-md"></i></a>                    
                     </div>
                     <div class="video-box">
                         <label class="form-label">Cari Disini</label>
@@ -114,7 +119,7 @@
                     </div>
                     <a href="./register.html" class="box">
                         Daftar JanCademy Sekarang.
-                        <i class="bx bx-right-arrow-alt"></i>
+                        <i class="bx bx-right-arrow-alt bx-lg"></i>
                     </a>
                 </div>
             </div>
@@ -169,7 +174,7 @@
                             </h1>
                             <p class="text-white">Bergabung dengan peserta lainnya dan jawab diskusi dengan dibimbing mentor terbaik.</p>
                         </div>
-                        <button class="btn btn-primary">Daftar Sekarang</button>
+                        <a href="./register.html" class="btn btn-primary">Daftar Sekarang</a>
                     </div>
                 </div>
             </div>
@@ -211,6 +216,7 @@
     </footer>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/slider.js"></script>
+    <script src="assets/js/transition.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
 </html>
