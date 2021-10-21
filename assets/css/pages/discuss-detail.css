@@ -56,6 +56,7 @@
     align-items: center;
     width: 100%;
     margin-bottom: 20px;
+    font-size: 14px;
     padding-bottom: 20px;
     border-bottom: 1px solid #f2f2f2;
     font-weight: bold;
@@ -153,7 +154,7 @@
 .question-avatar{
     width: 50px;
     height: 50px;
-    margin-right: 20px;
+    margin-right: 10px;
     border-radius: 50px;
     object-fit: cover;
 }
@@ -204,5 +205,8 @@
 @media (max-width:700px) {
     .title-header-section{
         margin-bottom: 30px;
+    }
+    .question-category{
+        margin-bottom: 10px;
     }
 }
