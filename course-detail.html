@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar dengan mudah di JanCademy - JanCademy</title>
+    <title>Pengenalan pemrograman dasar html, css dan javascript. - JanCademy</title>
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon"/>
     <link href="./assets/css/style.css" rel="stylesheet">   
     <link href="./assets/css/column.css" rel="stylesheet">  
     <link href="./assets/css/section/course.css" rel="stylesheet">  
@@ -20,10 +21,10 @@
             <a class="logo">JanCademy</a>
             <nav>
                 <a href="./index.html" class="menu-link">Beranda</a>
-                <a href="#" class="menu-link">Kursus & Kelas</a>
+                <a href="#" class="menu-link active">Kursus & Kelas</a>
                 <a href="./discuss-list.html" class="menu-link">Pertanyaan</a>
             </nav>
-            <button class="toggle-button"><i class="bx bx-menu"></i></button>
+            <button id="open-sidebar" class="toggle-button"><i class="bx bx-menu"></i></button>
         </div>
         <div class="header-right">
             <div class="user-nav">
@@ -33,12 +34,32 @@
                 </a>
                 <div class="submenu-user">
                     <a href="./dashboard.html" class="submenu-user-item"><i class="bx bxs-dashboard mr-1"></i>Dashboard</a>
-                    <a href="" class="submenu-user-item"><i class="bx bx-user mr-1"></i>Profil</a>
-                    <a href="" class="submenu-user-item"><i class="bx bx-log-out mr-1"></i>Keluar</a>
+                    <a href="./index.html" class="submenu-user-item"><i class="bx bx-log-out mr-1"></i>Keluar</a>
                 </div>
             </div>
         </div>
     </header>
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <a class="logo">JanCademy</a>
+            <button id="close-sidebar"  class="toggle-button"><i class="bx bx-x"></i></button>
+        </div>
+        <div class="sidebar-body">
+            <a href="./index.html" class="menu-link">Beranda</a>
+            <a href="./course-list.html" class="menu-link">Kursus & Kelas</a>
+            <a href="./discuss-list.html" class="menu-link">Pertanyaan</a>
+            <div class="sidebar-user-nav">
+                <a class="sidebar-user-link">
+                    <img class="sidebar-avatar-nav" src="./assets/images/avatar-1.jpg">
+                    Jan Falih Fadhillah
+                </a>
+                <div class="sidebar-submenu-user">
+                    <a href="./dashboard.html" class="submenu-user-item"><i class="bx bxs-dashboard mr-1"></i>Dashboard</a>
+                    <a href="./index.html" class="submenu-user-item"><i class="bx bx-log-out mr-1"></i>Keluar</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
         <div class="row">
             <div class="col-md-12 bg-primary">
@@ -62,7 +83,7 @@
             <div class="col-md-7 col-sm-12 bg-primary">
                 <div class="container pt-1 pb-3">
                     <video class="thumbnail" controls>
-                        <source src="https://cdn.videvo.net/videvo_files/video/free/2019-09/large_watermarked/190802_07_HD_15_preview.mp4">
+                        <source src="./assets/videos/video1.mp4">
                         Your Browser Not Support Video
                     </video>
                     <h3 class="title-section mb-0">Termasuk dalam kursus</h3>
@@ -151,6 +172,28 @@
                                 </div>
                                 <div class="review-body">
                                     <p class="review-text">Keren kursusnya jelas banget neranginnya.</p>
+                                </div>
+                                <div class="review-footer">
+                                    <div class="review-rating">
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star"></i>
+                                        <i class="bx bxs-star-half"></i>
+                                    </div>
+                                    <div class="review-action">
+                                        <div class="review-smile"><i class="bx bx-smile"></i>10</div>
+                                        <div class="review-sad"><i class="bx bx-sad"></i>3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-card">
+                                <div class="review-user">
+                                    <img class="review-avatar" src="./assets/images/avatar-dri.jpg">
+                                    Nur Andriansyah
+                                </div>
+                                <div class="review-body">
+                                    <p class="review-text">Jelas banget seru juga cara mengajarnya.</p>
                                 </div>
                                 <div class="review-footer">
                                     <div class="review-rating">

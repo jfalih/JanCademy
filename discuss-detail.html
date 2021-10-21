@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar dengan mudah di JanCademy - JanCademy</title>
+    <title>Kak tag img itu untuk apa ya? - JanCademy</title>
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon"/>
     <link href="./assets/css/style.css" rel="stylesheet">   
     <link href="./assets/css/column.css" rel="stylesheet">  
     <link href="./assets/css/pages/discuss-detail.css" rel="stylesheet">  
@@ -17,10 +18,10 @@
             <a class="logo">JanCademy</a>
             <nav>
                 <a href="./index.html" class="menu-link">Beranda</a>
-                <a href="#" class="menu-link">Kursus & Kelas</a>
+                <a href="#" class="menu-link active">Kursus & Kelas</a>
                 <a href="./discuss-list.html" class="menu-link">Pertanyaan</a>
             </nav>
-            <button class="toggle-button"><i class="bx bx-menu"></i></button>
+            <button id="open-sidebar" class="toggle-button"><i class="bx bx-menu"></i></button>
         </div>
         <div class="header-right">
             <div class="user-nav">
@@ -30,12 +31,33 @@
                 </a>
                 <div class="submenu-user">
                     <a href="./dashboard.html" class="submenu-user-item"><i class="bx bxs-dashboard mr-1"></i>Dashboard</a>
-                    <a href="" class="submenu-user-item"><i class="bx bx-user mr-1"></i>Profil</a>
-                    <a href="" class="submenu-user-item"><i class="bx bx-log-out mr-1"></i>Keluar</a>
+                    <a href="./index.html" class="submenu-user-item"><i class="bx bx-log-out mr-1"></i>Keluar</a>
                 </div>
             </div>
         </div>
     </header>
+    
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <a class="logo">JanCademy</a>
+            <button id="close-sidebar"  class="toggle-button"><i class="bx bx-x"></i></button>
+        </div>
+        <div class="sidebar-body">
+            <a href="./index.html" class="menu-link">Beranda</a>
+            <a href="./course-list.html" class="menu-link">Kursus & Kelas</a>
+            <a href="./discuss-list.html" class="menu-link">Pertanyaan</a>
+            <div class="sidebar-user-nav">
+                <a class="sidebar-user-link">
+                    <img class="sidebar-avatar-nav" src="./assets/images/avatar-1.jpg">
+                    Jan Falih Fadhillah
+                </a>
+                <div class="sidebar-submenu-user">
+                    <a href="./dashboard.html" class="submenu-user-item"><i class="bx bxs-dashboard mr-1"></i>Dashboard</a>
+                    <a href="./index.html" class="submenu-user-item"><i class="bx bx-log-out mr-1"></i>Keluar</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
         <div class="row">
             <div class="col-md-12 col-sm-12">
@@ -114,7 +136,6 @@
             </div>
         </div>
     </div>
-    
     <footer>
         <div class="footer-left">
             <a class="footer-logo">JanCademy</a>

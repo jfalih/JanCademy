@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masuk ke akunmu - JanCademy</title>
+    <title>Daftar akun baru - JanCademy</title>
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon"/>
     <link href="./assets/css/boxicons.min.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
     <link href="./assets/css/column.css" rel="stylesheet">
@@ -13,21 +14,34 @@
     <link href="./assets/css/config.css" rel="stylesheet">
 </head>
 <body>
-    <header id="header" class="scrollActive">
+    <header class="scrollActive">
         <div class="header-left">
             <a class="logo">JanCademy</a>
             <nav>
                 <a href="./index.html" class="menu-link">Beranda</a>
-                <a href="./diskusi.html" class="menu-link">Diskusi</a>
-                <a href="" class="menu-link">Lowongan</a>
+                <a href="./course-list.html" class="menu-link">Kursus & Kelas</a>
+                <a href="./discuss-list.html" class="menu-link">Pertanyaan</a>
             </nav>
-            <button class="toggle-button"><i class="bx bx-menu"></i></button>
+            <button id="open-sidebar" class="toggle-button"><i class="bx bx-menu"></i></button>
         </div>
         <div class="header-right">
             <a href="login.html" class="menu-login">Masuk</a>
             <a href="register.html" class="menu-register">Daftar</a>
         </div>
     </header>
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <a class="logo">JanCademy</a>
+            <button id="close-sidebar"  class="toggle-button"><i class="bx bx-x"></i></button>
+        </div>
+        <div class="sidebar-body">
+            <a href="./index.html" class="menu-link">Beranda</a>
+            <a href="./course-list.html" class="menu-link">Kursus & Kelas</a>
+            <a href="./discuss-list.html" class="menu-link">Pertanyaan</a>
+            <a href="./login.html" class="menu-link">Masuk</a>
+            <a href="./register.html" class="menu-link active">Daftar</a>
+        </div>
+    </div>
     <div class="wrapper">
         <div class="row">
             <div class="col-md-6 col-sm-12 bg-white">
@@ -93,18 +107,15 @@
         <div class="footer-right">
             <div class="footer-menu">
                 <h4 class="menu-title">Eksplorasi</h4>
-                <a href="" class="menu-footer">Beranda</a>
-                <a href="" class="menu-footer">Diskusi</a>
-                <a href="" class="menu-footer">Lowongan Pekerjaan</a>
-                <a href="./index.html#panduan" class="menu-footer">Panduan</a>
-                <a href="./index.html#kata_mereka" class="menu-footer">Kata Mereka</a>
+                <a href="./index.html" class="menu-footer">Beranda</a>
+                <a href="./course-list.html" class="menu-footer">Kursus & Kelas</a>
+                <a href="./discuss-list.html" class="menu-footer">Pertanyaan</a>
             </div>
             
             <div class="footer-menu">
                 <h4 class="menu-title">Tentang Kami</h4>
-                <a href="" class="menu-footer">Lorem</a>
-                <a href="" class="menu-footer">Komunitas</a>
-                <a href="" class="menu-footer">Tentang Kami</a>
+                <a href="./index.html#panduan" class="menu-footer">Panduan</a>
+                <a href="./index.html#kata_mereka" class="menu-footer">Kata Mereka</a>            
             </div>
             
             <div class="footer-menu">
@@ -115,6 +126,7 @@
         </div>
     </footer>
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/index.js"></script>
     <script src="assets/js/slider.js"></script>
 </body>
 </html>

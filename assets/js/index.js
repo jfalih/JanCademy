@@ -8,6 +8,14 @@ $(document).ready(function(){
             header.removeClass('scrollActive');
         }
     });
+    let open_sidebar = $('#open-sidebar');
+    let close_sidebar = $('#close-sidebar');
+    open_sidebar.click(function(){
+      $('#sidebar').addClass('active');
+    })
+    close_sidebar.click(function(){
+      $('#sidebar').removeClass('active');
+    })
     // Category Slider Animate
     $('#right-button-category').click(function(e) {
         e.preventDefault();
