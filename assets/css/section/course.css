@@ -1,0 +1,142 @@
+.course-highlight{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.course-list{
+    position: relative;
+    display: flex;
+    padding:30px;
+    width: 100%;
+    overflow-x: auto;
+}
+.course-list .course-card{
+    margin: 0 20px;
+}
+.course-price{
+    font-weight: bold;
+    margin-right: 5px;
+}
+.course-original-price{
+    font-size: 12px;
+}
+.course-card{
+    position: relative;
+    flex: none;
+    margin:20px auto;
+    width: 300px;
+    border:1px solid #f2f2f2;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.course-img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+.course-avatar{
+    height: 30px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50px;
+    width: 30px;
+}
+.course-rating{
+    padding:5px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+    color:rgb(58, 58, 58);
+    font-weight: bold;
+    background-color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.course-user{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color:rgb(58, 58, 58);
+    text-decoration: none;
+    font-weight: bold;
+    padding:10px;
+}
+.course-user:hover{
+    color:var(--primary);
+}
+.course-progress{
+    display: block;
+}
+.progress-text{
+    font-size: 12px;
+    font-weight: bold;
+}
+.progress{
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: #f2f2f2;
+}
+.progress-bar{
+    width: 70%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--secondary);
+}
+.course-rating i{
+    color:rgb(255, 166, 0);
+}
+.course-meta{
+    padding:10px;
+}
+.course-title{
+    display: block;
+    margin-bottom:20px;
+    font-size: 14px;
+    text-decoration: none;
+    color:#000;
+}
+.course-title:hover{
+    color: var(--primary);
+}
+
+.course-list::-webkit-scrollbar {
+    height: 3px;
+}
+.course-list::-webkit-scrollbar-track {
+    background-color: #ccc;
+}
+.course-list::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+}
+.arrow-left-course{
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:none;
+    z-index: 1;
+    color:#fff;
+    border-radius: 50px;
+    top: 50%;
+    left:0;
+    background-color: rgba(134, 214, 124, 0.5);
+}
+.arrow-right-course{
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:none;
+    z-index: 1;
+    color:#fff;
+    border-radius: 50px;
+    top: 50%;
+    right: 0;
+    background-color: rgba(134, 214, 124, 0.5);
+}
+.arrow-left-course:hover{
+    background-color: var(--primary);
+}
+.arrow-right-course:hover{
+    background-color: var(--primary);
+}

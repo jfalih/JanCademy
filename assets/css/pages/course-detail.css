@@ -1,0 +1,72 @@
+.thumbnail{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    object-fit: cover;
+}
+.title-course{
+    max-width: 700px;
+}
+.title-course .title-section{
+    margin-bottom: 10px;
+}
+.badge-bestseller{
+    color:#fff;
+    padding:10px 30px;
+    margin:10px;
+    border-radius: 20px;
+    background-color: rgb(202, 41, 41);
+}
+.payment-author{
+    border-top: 1px solid #f2f2f2;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.badge-author{
+    padding:5px;
+    width: 100px;
+    margin-bottom: 20px;
+    color:#fff;
+    border-radius: 5px;
+    background-color: var(--secondary);
+}
+.img-author{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.name-author{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(46, 46, 46);
+}
+.title-author{
+    font-size: 14px;
+}
+.payment-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color:#000;
+    padding:30px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.payment-price{
+    font-weight: bold;
+    font-size: 32px;
+}
+.meta-author{
+    display: block;
+}
+@media (max-width:700px) {
+    .title-course{
+        margin-bottom: 30px;
+    }
+}

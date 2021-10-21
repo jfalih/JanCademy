@@ -85,6 +85,58 @@
         border-radius: 2px;
         height: 50px;
     }
+    .user-nav{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .user-link{
+        display: flex;
+        cursor: pointer;
+        color:#fff;
+        align-items: center;
+    }
+    header.scrollActive .user-link{
+        color:#000;
+    }
+    .submenu-user{
+        display: none;
+        flex-direction: column;
+        margin-top: 40px;
+        border-radius: 5px;
+        background-color:#fff;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        position: absolute;
+    }
+    .submenu-user-item{
+        padding:10px;
+        font-size: 14px;
+        color:#000;
+        text-decoration: none;
+        border-bottom: 1px solid #f2f2f2;
+        width: 100%;
+        text-decoration: none;
+    }
+    .submenu-user-item:last-child{
+        border-bottom: none;
+    }
+    .user-nav:hover .submenu-user{
+        display: flex;
+    }
+    .submenu-user-item:hover{
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        color:#000;
+    }
+    .avatar-nav{
+        margin-right: 10px;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
     header.scrollActive .toggle-button{
         background-color: var(--primary);
         color:#fff;
@@ -155,17 +207,22 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding:100px 100px 30px 100px;
+        margin-bottom: 50px;
     }
     .breadcrumbs{
         display: flex;
-        background-color: #f2f2f2;
+        background-color: #fff;
         border-radius: 5px;
         padding:10px 50px;
     }
     .breadcrumbs-items{
+        text-decoration: none;
+        color:#000;
         font-size: 12px;
         cursor: pointer;
+    }
+    .breadcrumbs-items:hover{
+        color:var(--primary)
     }
     .breadcrumbs-items::after{
         content: '>';
@@ -177,6 +234,19 @@
     }
     .breadcrumbs-items.active::after{
         content: none;
+    }
+    @media (max-width:1000px) {
+        .header-section{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .header-section h1{
+            margin-bottom: 20px;
+        }
+        .breadcrumbs{
+            width: 100%;
+        }
     }
 /* End BreadCrumbs */
 footer{

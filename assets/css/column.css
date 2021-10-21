@@ -19,11 +19,20 @@
 .col-md-8{
     width: calc(100%/12*8);
 }
+.col-md-3{
+    width: calc(100%/12*3);
+}
 .col-md-4{
     width: calc(100%/12*4);
 }
+.col-md-5{
+    width: calc(100%/12*5);
+}
 .col-md-6{
     width: calc(100%/12*6);
+}
+.col-md-7{
+    width: calc(100%/12*7);
 }
 
 @media(max-width:900px){
