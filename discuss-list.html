@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar dengan mudah di JanCademy - JanCademy</title>
+    <link href="./assets/css/style.css" rel="stylesheet">   
+    <link href="./assets/css/column.css" rel="stylesheet">
+    <link href="./assets/css/section/question.css" rel="stylesheet">
+    <link href="./assets/css/pages/course-list.css" rel="stylesheet">
+    <link href="./assets/css/config.css" rel="stylesheet">
+    <link href="./assets/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="header-left">
+            <a class="logo">JanCademy</a>
+            <nav>
+                <a href="./index.html" class="menu-link">Beranda</a>
+                <a href="./course-list.html" class="menu-link ">Kursus & Kelas</a>
+                <a href="#" class="menu-link active">Pertanyaan</a>
+            </nav>
+            <button class="toggle-button"><i class="bx bx-menu"></i></button>
+        </div>
+        <div class="header-right">
+            <div class="user-nav">
+                <a class="user-link">
+                    <img class="avatar-nav" src="./assets/images/avatar-1.jpg">
+                    Jan Falih Fadhillah <i class="bx bx-chevron-down"></i>
+                </a>
+                <div class="submenu-user">
+                    <a href="./dashboard.html" class="submenu-user-item"><i class="bx bxs-dashboard mr-1"></i>Dashboard</a>
+                    <a href="" class="submenu-user-item"><i class="bx bx-user mr-1"></i>Profil</a>
+                    <a href="" class="submenu-user-item"><i class="bx bx-log-out mr-1"></i>Keluar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 bg-primary-with-wave relative">
+                <div class="container center">      
+                    <h1 class="text-white">Pilih kursus,<br>dan tingkatkan kemampuan kamu.</h1>
+                    <p class="text-white">Banyak kelas yang tersedia yang dibuat langsung oleh mentor terbaik kami.</p>
+                    <div class="category-box">
+                        <div class="category-box-title">Kategori</div>
+                        <button id="left-button-category-list" class="arrow-left-category"><i class="bx bx-chevron-left bx-md"></i></button>
+                        <div id="list-category-course" class="category-list">
+                            <a class="category">
+                                <div class="category-icon">
+                                    <i class="bx bx-laptop"></i>
+                                </div>
+                                Programming
+                            </a>
+                            <a class="category">
+                                <div class="category-icon">
+                                    <i class="bx bx-atom"></i>
+                                </div>
+                                Sains
+                            </a>
+                            <a class="category">
+                                <div class="category-icon">
+                                    <i class="bx bx-shape-triangle"></i>
+                                </div>
+                                Matematika
+                            </a>
+                            <a class="category">
+                                <div class="category-icon">
+                                    <i class="bx bx-cycling"></i>
+                                </div>
+                                Olahraga
+                            </a>
+                            
+                            <a class="category">
+                                <div class="category-icon">
+                                    <i class="bx bx-user"></i>
+                                </div>
+                                Agama
+                            </a>
+                        </div>
+                        <button id="right-button-category-list" class="arrow-right-category"><i class="bx bx-chevron-right bx-md"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="container pb-3">
+                    <h1 class="title-section mb-2">Rekomendasi Pertanyaan</h1>
+                    <p class="mb-2">Berikut ini rekomendasi pertanyaan untuk kamu.</p>
+                    <div class="question-highlight">
+                        <button id="question-1-list-left" class="arrow-left-question"><i class="bx bx-chevron-left bx-md"></i></button>
+                        <div id="question-1-list" class="question-list">
+                            <a href="./discuss-detail.html" class="question-card">
+                                <div class="question-user">
+                                    <img class="question-avatar" src="./assets/images/avatar-1.jpg">
+                                    Jan Falih Fadhillah
+                                </div>
+                                <div class="question-body">
+                                    <p class="question-text">Apakah html itu bahasa pemrograman?</p>
+                                </div>
+                                <div class="question-footer">
+                                    <div class="question-category">
+                                        <i class="bx bx-laptop"></i>Programming
+                                    </div>
+                                    <div class="question-action">
+                                        <div class="question-love"><i class="bx bx-heart"></i>10</div>
+                                        <div class="question-discuss"><i class="bx bxs-comment"></i>2</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./discuss-detail.html" class="question-card">
+                                <div class="question-user">
+                                    <img class="question-avatar" src="./assets/images/avatar-1.jpg">
+                                    Jan Falih Fadhillah
+                                </div>
+                                <div class="question-body">
+                                    <p class="question-text">Kenapa air tidak berwarna?</p>
+                                </div>
+                                <div class="question-footer">
+                                    <div class="question-category">
+                                        <i class="bx bx-atom"></i>Sains
+                                    </div>
+                                    <div class="question-action">
+                                        <div class="question-love"><i class="bx bx-heart"></i>2</div>
+                                        <div class="question-discuss"><i class="bx bxs-comment"></i>1</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./discuss-detail.html" class="question-card">
+                                <div class="question-user">
+                                    <img class="question-avatar" src="./assets/images/avatar-dri.jpg">
+                                    Nur Andriansyah
+                                </div>
+                                <div class="question-body">
+                                    <p class="question-text">Kak tag img itu untuk apa ya?</p>
+                                </div>
+                                <div class="question-footer">
+                                    <div class="question-category">
+                                        <i class="bx bx-laptop"></i>Programming
+                                    </div>
+                                    <div class="question-action">
+                                        <div class="question-love"><i class="bx bx-heart"></i>3</div>
+                                        <div class="question-discuss"><i class="bx bxs-comment"></i>2</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <button id="question-1-list-right" class="arrow-right-question"><i class="bx bx-chevron-right bx-md"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 bg-image">
+                <div class="container center">
+                    <h1 class="text-white">Berdikusi dengan teman dan mentor terbaik di JanCademy.</h1>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="container pt-3">
+                    <h1 class="title-section mb-2">Pertanyaan Di <span class="text-primary">Programming</span></h1>
+                    <p class="mb-2">Berikut ini pertanyaan terbaik diprogramming untuk kamu.</p>
+                    <div class="question-highlight">
+                        <button id="question-2-list-left" class="arrow-left-question"><i class="bx bx-chevron-left bx-md"></i></button>
+                        <div id="question-2-list" class="question-list">
+                            <a href="./discuss-detail.html" class="question-card">
+                                <div class="question-user">
+                                    <img class="question-avatar" src="./assets/images/avatar-1.jpg">
+                                    Jan Falih Fadhillah
+                                </div>
+                                <div class="question-body">
+                                    <p class="question-text">Apakah html itu bahasa pemrograman?</p>
+                                </div>
+                                <div class="question-footer">
+                                    <div class="question-category">
+                                        <i class="bx bx-laptop"></i>Programming
+                                    </div>
+                                    <div class="question-action">
+                                        <div class="question-love"><i class="bx bx-heart"></i>10</div>
+                                        <div class="question-discuss"><i class="bx bxs-comment"></i>2</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./discuss-detail.html" class="question-card">
+                                <div class="question-user">
+                                    <img class="question-avatar" src="./assets/images/avatar-dri.jpg">
+                                    Nur Andriansyah
+                                </div>
+                                <div class="question-body">
+                                    <p class="question-text">Kak tag img itu untuk apa ya?</p>
+                                </div>
+                                <div class="question-footer">
+                                    <div class="question-category">
+                                        <i class="bx bx-laptop"></i>Programming
+                                    </div>
+                                    <div class="question-action">
+                                        <div class="question-love"><i class="bx bx-heart"></i>3</div>
+                                        <div class="question-discuss"><i class="bx bxs-comment"></i>2</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./discuss-detail.html" class="question-card">
+                                <div class="question-user">
+                                    <img class="question-avatar" src="./assets/images/avatar-2.jpg">
+                                    John Doe
+                                </div>
+                                <div class="question-body">
+                                    <p class="question-text">Css itu fungsinya untuk apa ya kak?</p>
+                                </div>
+                                <div class="question-footer">
+                                    <div class="question-category">
+                                        <i class="bx bx-laptop"></i>Programming
+                                    </div>
+                                    <div class="question-action">
+                                        <div class="question-love"><i class="bx bx-heart"></i>1</div>
+                                        <div class="question-discuss"><i class="bx bxs-comment"></i>2</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <button id="question-2-list-right" class="arrow-right-question"><i class="bx bx-chevron-right bx-md"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-left">
+            <a class="footer-logo">JanCademy</a>
+            <p>JanCademy adalah platform akademis yang memudahkan untuk berdiskusi, maupun mencari bimbingan kepada para mentor terbaik dibidangnya.</p>
+            <div class="social-media">
+                <a href="https://instagram.com/jan.falih" class="social-item"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.facebook.com/jan.fadhillah.3/" class="social-item"><i class="bx bxl-facebook"></i></a>
+                <a href="https://id.linkedin.com/in/jan-falih-fadhillah-a7bb7318b" class="social-item"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-menu">
+                <h4 class="menu-title">Eksplorasi</h4>
+                <a href="" class="menu-footer">Beranda</a>
+                <a href="" class="menu-footer">Diskusi</a>
+                <a href="" class="menu-footer">Lowongan Pekerjaan</a>
+                <a href="./index.html#panduan" class="menu-footer">Panduan</a>
+                <a href="./index.html#kata_mereka" class="menu-footer">Kata Mereka</a>
+            </div>
+            
+            <div class="footer-menu">
+                <h4 class="menu-title">Tentang Kami</h4>
+                <a href="" class="menu-footer">Lorem</a>
+                <a href="" class="menu-footer">Komunitas</a>
+                <a href="" class="menu-footer">Tentang Kami</a>
+            </div>
+            
+            <div class="footer-menu">
+                <h4 class="menu-title">Akun</h4>
+                <a href="./login.html" class="menu-footer">Masuk</a>
+                <a href="./register.html" class="menu-footer">Daftar</a>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

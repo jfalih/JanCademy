@@ -1,0 +1,105 @@
+.category-box{
+    padding:20px;
+    width: 800px;
+    display: block;
+    position: absolute;
+    color:#000;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    bottom: -80px;
+}
+.category-list{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    padding:20px;
+}
+.category-box-title{
+    font-size: 14px;
+    font-weight: bold;
+}
+.category{
+    display: flex;
+    flex: none;
+    padding:10px;
+    margin:0 10px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 50px;
+    color:var(--primary);
+    border: 1px solid var(--primary);
+}
+.category:hover{
+    background-color: var(--primary);
+    color:#fff;
+}
+.category:hover .category-icon{
+    background-color: #fff;
+    color: var(--primary);
+}
+.category-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 20px;
+    height: 40px;
+    background-color:var(--primary);
+    color: #fff;
+}
+
+.arrow-left-category{
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:none;
+    z-index: 1;
+    color:#fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    top: 50%;
+    left:0;
+    background-color: rgba(134, 214, 124, 0.5);
+}
+.arrow-right-category{
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:none;
+    z-index: 1;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    color:#fff;
+    border-radius: 50px;
+    top: 50%;
+    right: 0;
+    background-color: rgba(134, 214, 124, 0.5);
+}
+.arrow-left-category:hover{
+    background-color: var(--primary);
+}
+.arrow-right-category:hover{
+    background-color: var(--primary);
+}
+.category-list::-webkit-scrollbar {
+    height: 3px;
+}
+.category-list::-webkit-scrollbar-track {
+    background-color: #ccc;
+}
+.category-list::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+}
+@media (max-width:1000px) {
+    .category-box{
+        width: 600px;
+    }
+}
+@media (max-width:700px){
+    .category-box{
+        width: 300px;
+    }
+}

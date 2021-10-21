@@ -102,4 +102,59 @@ $(document).ready(function(){
         scrollLeft: "-=200px"
       });
     });
+
+    $('#right-button-category-list').click(function(e) {
+      e.preventDefault();
+      $('#list-category-course').animate({
+        scrollLeft: "+=200px"
+      });
+    });
+    $('#left-button-category-list').click(function(e) {
+      e.preventDefault();
+      $('#list-category-course').animate({
+        scrollLeft: "-=200px"
+      });
+      
+    $('#question-2-list-left').click(function(e) {
+      e.preventDefault();
+      $('#question-2-list').animate({
+        scrollLeft: "+=200px"
+      });
+    });
+    $('#question-2-list-right').click(function(e) {
+      e.preventDefault();
+      $('#question-2-list').animate({
+        scrollLeft: "-=200px"
+      });
+    });
+
+    });
+    
+    
+      
+    $('#question-1-list-right').click(function(e) {
+      e.preventDefault();
+      $('#question-1-list').animate({
+        scrollLeft: "+=200px"
+      });
+    });
+    $('#question-1-list-left').click(function(e) {
+      e.preventDefault();
+      $('#question-1-list').animate({
+        scrollLeft: "-=200px"
+      });
+    });
+
+    $('#question-2-list-right').click(function(e) {
+      e.preventDefault();
+      $('#question-2-list').animate({
+        scrollLeft: "+=200px"
+      });
+    });
+    $('#question-2-list-left').click(function(e) {
+      e.preventDefault();
+      $('#question-2-list').animate({
+        scrollLeft: "-=200px"
+      });
+    });
 })

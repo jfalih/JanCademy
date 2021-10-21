@@ -1,3 +1,32 @@
+
+.title-header-section{
+    max-width: 700px;
+}
+.title-header-section .title-section{
+    margin-bottom: 10px;
+}
+.question-answer{
+    position: relative;
+    flex: none;
+    width: 100%;
+    padding:30px;
+    text-decoration: none;
+    border-radius: 50px;
+    border:1px solid #f2f2f2;
+    color: #000;
+    margin-top: 20px;
+    background-color: #fff;
+}
+.question-button{
+    position: absolute;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    color:#ccc;
+    width: 50px;
+    cursor: pointer;
+    height: 50px;
+}
 .question-highlight{
     position: relative;
     display: block;
@@ -10,12 +39,10 @@
     width: 100%;
     overflow-x: auto;
 }
-.question-card{
+.question{
     position: relative;
-    cursor: pointer;
     flex: none;
-    margin:0 20px;
-    width: 350px;
+    width: 100%;
     padding:30px;
     text-decoration: none;
     border-radius: 50px;
@@ -23,14 +50,6 @@
     color: #000;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-}
-.question-card:hover{
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-}
-.question-input{
-    margin-top: 20px;
-    background-color: #f2f2f2;
-    padding:20px;
 }
 .question-user{
     display: flex;
@@ -46,6 +65,7 @@
 }
 .question-footer{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
 }
@@ -60,6 +80,43 @@
 }
 .question-action{
     display: flex;
+}
+.form-question{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+.question-input{
+    padding:20px;
+    border-radius: 50px;
+    width: 100%;
+    border:none;
+    color:rgb(68, 68, 68);
+    background-color: transparent;
+}
+.question-input::placeholder{
+    color:#ccc;
+}
+.question-smile{
+    padding:10px;
+    margin-right: 10px;
+    align-items: center;
+    color:var(--primary);
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: rgb(211, 255, 200);
+}
+.question-sad{
+    padding:10px;
+    margin-right: 10px;
+    align-items: center;
+    color:rgb(182, 61, 61);
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: rgb(255, 200, 200);
 }
 .question-love{
     padding:10px;
@@ -142,4 +199,10 @@
 }
 .arrow-right-question:hover{
     background-color: #fff;
+}
+
+@media (max-width:700px) {
+    .title-header-section{
+        margin-bottom: 30px;
+    }
 }

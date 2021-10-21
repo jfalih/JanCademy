@@ -7,11 +7,8 @@
     <title>Belajar dengan mudah di JanCademy - JanCademy</title>
     <link href="./assets/css/style.css" rel="stylesheet">   
     <link href="./assets/css/column.css" rel="stylesheet">
-    <link href="./assets/css/section/video.css" rel="stylesheet">
-    <link href="./assets/css/section/panduan.css" rel="stylesheet">
-    <link href="./assets/css/section/category.css" rel="stylesheet">
-    <link href="./assets/css/section/slider.css" rel="stylesheet">
     <link href="./assets/css/section/course.css" rel="stylesheet">
+    <link href="./assets/css/pages/course-list.css" rel="stylesheet">
     <link href="./assets/css/config.css" rel="stylesheet">
     <link href="./assets/css/boxicons.min.css" rel="stylesheet">
 </head>
@@ -43,14 +40,47 @@
     <div class="wrapper">
         <div class="row">
             <div class="col-md-12 col-sm-12 bg-primary-with-wave relative">
-                <div class="container center">                
-                <div class="video-description">
-                    <h1 class="text-white">Tersedia banyak kelas,<br>untuk meningkatkan kemampuan kamu.</h1>
+                <div class="container center">      
+                    <h1 class="text-white">Pilih kursus,<br>dan tingkatkan kemampuan kamu.</h1>
                     <p class="text-white">Banyak kelas yang tersedia yang dibuat langsung oleh mentor terbaik kami.</p>
-                    <div class="video-box">
-                        <label class="form-label">Categories</label>
+                    <div class="category-box">
+                        <div class="category-box-title">Kategori</div>
+                        <button id="left-button-category-list" class="arrow-left-category"><i class="bx bx-chevron-left bx-md"></i></button>
+                        <div id="list-category-course" class="category-list">
+                            <a class="category">
+                                <div class="category-icon">
+                                    <i class="bx bx-laptop"></i>
+                                </div>
+                                Programming
+                            </a>
+                            <a class="category">
+                                <div class="category-icon">
+                                    <i class="bx bx-atom"></i>
+                                </div>
+                                Sains
+                            </a>
+                            <a class="category">
+                                <div class="category-icon">
+                                    <i class="bx bx-shape-triangle"></i>
+                                </div>
+                                Matematika
+                            </a>
+                            <a class="category">
+                                <div class="category-icon">
+                                    <i class="bx bx-cycling"></i>
+                                </div>
+                                Olahraga
+                            </a>
+                            
+                            <a class="category">
+                                <div class="category-icon">
+                                    <i class="bx bx-user"></i>
+                                </div>
+                                Agama
+                            </a>
+                        </div>
+                        <button id="right-button-category-list" class="arrow-right-category"><i class="bx bx-chevron-right bx-md"></i></button>
                     </div>
-                </div>
                 </div>
             </div>
             <div class="col-md-12">
@@ -97,7 +127,7 @@
                                 </div>
                             </div>
                             <div class="course-card">
-                                <img class="course-img" src="assets/images/avatar-1.jpg">
+                                <img class="course-img" src="assets/images/course/nasa.jpg">
                                 <a href="./course-detail.html" class="course-user">
                                     <img class="course-avatar" src="assets/images/avatar-dri.jpg">                            
                                     Nur Andriansyah
