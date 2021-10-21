@@ -17,6 +17,16 @@
     border-radius: 20px;
     background-color: rgb(202, 41, 41);
 }
+.payment-rating{
+    font-size: 24px;
+    font-weight: bold;
+    color:#000;
+    margin-bottom: 10px;
+}
+.payment-rating i{
+    margin-right: 10px;
+    color: var(--secondary);
+}
 .payment-author{
     border-top: 1px solid #f2f2f2;
     padding-top: 20px;

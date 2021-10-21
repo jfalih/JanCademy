@@ -114,24 +114,20 @@ $(document).ready(function(){
       $('#list-category-course').animate({
         scrollLeft: "-=200px"
       });
-      
-    $('#question-2-list-left').click(function(e) {
+    });
+    
+    $('#right-button-review').click(function(e) {
       e.preventDefault();
-      $('#question-2-list').animate({
+      $('#list-review').animate({
         scrollLeft: "+=200px"
       });
     });
-    $('#question-2-list-right').click(function(e) {
+    $('#left-button-review').click(function(e) {
       e.preventDefault();
-      $('#question-2-list').animate({
+      $('#list-review').animate({
         scrollLeft: "-=200px"
       });
     });
-
-    });
-    
-    
-      
     $('#question-1-list-right').click(function(e) {
       e.preventDefault();
       $('#question-1-list').animate({

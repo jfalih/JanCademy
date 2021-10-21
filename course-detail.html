@@ -93,7 +93,9 @@
             <div class="col-md-5 col-sm-12 bg-primary">
                 <div class="container pt-1 pb-3">
                     <div class="payment-card">
+                        <div class="payment-rating"><i class="bx bxs-star"></i>4.3</div>
                         <div class="payment-price">Rp73.000</div>
+                        <div class="original-payment-price"><s>Rp.1000.000</s></div>
                         <button class="btn btn-outline btn-block">Beli Sekarang</button>
                         <div class="payment-author">
                             <div class="badge-author">Mentor</div>
@@ -140,8 +142,9 @@
                 <div class="container pt-3 pb-3">
                     <h1 class="title-section">Review</h1>    
                     <div class="review-highlight">
-                        <div class="review-list">
-                            <a class="review-card">
+                        <button id="left-button-review" class="arrow-left-review"><i class="bx bx-chevron-left bx-md"></i></button>
+                        <div id="list-review" class="review-list">
+                            <div class="review-card">
                                 <div class="review-user">
                                     <img class="review-avatar" src="./assets/images/avatar-1.jpg">
                                     Jan Falih Fadhillah
@@ -162,8 +165,9 @@
                                         <div class="review-sad"><i class="bx bx-sad"></i>3</div>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
+                        <button id="right-button-review" class="arrow-right-review"><i class="bx bx-chevron-right bx-md"></i></button>
                     </div>
                 </div>
             </div>
