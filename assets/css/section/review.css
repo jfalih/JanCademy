@@ -43,19 +43,26 @@
     width: 100%;
     justify-content: space-between;
 }
-.review-category{
-    padding:10px;
+.review-rating{
     font-size: 14px;
     display: flex;
     align-items: center;
-    color:#fff;
+    color:var(--secondary);
     border-radius: 20px;
-    background-color: var(--primary);
 }
 .review-action{
     display: flex;
 }
-.review-love{
+.review-smile{
+    padding:10px;
+    margin-right: 10px;
+    align-items: center;
+    color:var(--primary);
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: rgb(211, 255, 200);
+}
+.review-sad{
     padding:10px;
     margin-right: 10px;
     align-items: center;
@@ -63,15 +70,6 @@
     font-size: 14px;
     border-radius: 20px;
     background-color: rgb(255, 200, 200);
-}
-.review-discuss{
-    padding:10px;
-    margin-right: 10px;
-    align-items: center;
-    color:rgb(179, 179, 179);
-    font-size: 14px;
-    border-radius: 20px;
-    background-color: #f2f2f2;
 }
 .review-love i{
     margin-right: 5px;
